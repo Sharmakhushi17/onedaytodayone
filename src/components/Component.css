@@ -1,0 +1,16 @@
+input::placeholder {
+  color: white; /* Replace 'red' with your desired color */
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.8;
+  }
+}
