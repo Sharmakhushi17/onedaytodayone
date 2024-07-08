@@ -4,9 +4,8 @@ import cross from "../assets/images/cross.png";
 import "./commonStyles.css";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ route }) => {
   const [localTime, setLocalTime] = useState("00:00:00");
-  const route = window.location.pathname;
   let interval;
 
   function printLiveLocalTime() {
@@ -56,7 +55,7 @@ const Header = () => {
             </Link>
           </>
         ) : (
-          <Link to="/contacts">
+          <Link to="/">
             <img
               src={cross}
               alt="cross"

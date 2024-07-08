@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import icon from "../assets/images/top-right.png";
 
-const Footer = () => {
-  const route = window.location.pathname;
+const Footer = ({ route }) => {
   return (
     <div className="bg-[black] items-center text-[white] font-instrument font-semibold items-center flex-wrap overflow-x-hidden">
       {route !== "/navbar" ? (
