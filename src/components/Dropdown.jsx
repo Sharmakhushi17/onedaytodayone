@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Dropdown = ({ label, content }) => {
+const Dropdown = ({ label, content, className = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -11,9 +11,9 @@ const Dropdown = ({ label, content }) => {
     <div className="py-[1rem]">
       <button
         onClick={toggleDropdown}
-        className=" border border-white border-opacity-[0.2]  bg- 
+        className={` border border-white border-opacity-[0.2]  bg- 
            [transparent] rounded-lg text-[1.4rem] px-5 py-2.5 
-            text-center inline-flex items-center  w-[90%] h-[5rem] font-semibold text-[white] font-instrument"
+            text-center inline-flex items-center  w-[90%] h-[5rem] font-semibold text-[white] font-instrument ${className}`}
         type="button"
       >
         {label}
