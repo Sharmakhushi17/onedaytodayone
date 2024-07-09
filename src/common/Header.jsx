@@ -36,7 +36,10 @@ const Header = ({ route }) => {
     >
       <p>
         <span className="text-[grey]">
-          <Link className=" mail-icon hover:opacity-[0.5]" to="/">
+          <Link
+            className=" mail-icon hover:opacity-[0.5] cursor-pointer"
+            to="/"
+          >
             LOCAL
           </Link>
         </span>{" "}

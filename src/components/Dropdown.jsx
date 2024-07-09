@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cross from "../assets/images/plus.png";
 
 const Dropdown = ({ label, content, className = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,22 +17,14 @@ const Dropdown = ({ label, content, className = "" }) => {
             text-center inline-flex items-center  w-[90%] h-[5rem] font-semibold text-[white] font-instrument ${className}`}
         type="button"
       >
-        {label}
-        <svg
-          className="w-2.5 h-2.5 ms-3"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 6"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="m1 1 4 4 4-4"
+        <div className="flex justify-between items-center w-[100%]">
+          {label}
+          <img
+            src={cross}
+            alt=""
+            className={`h-[2rem] w-[2rem] ${isOpen ? "rotate-[45deg]" : ""}`}
           />
-        </svg>
+        </div>
       </button>
 
       {isOpen && (

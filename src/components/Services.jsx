@@ -10,13 +10,14 @@ import insights from "../assets/images/Insights.jpg";
 // Example data for cards
 const Services = () => {
   const cards = [
-    { img: magazine, title: "Magazines" },
-    { img: interview, title: "YouTube Interviews" },
-    { img: books, title: "Books" },
-    { img: articles, title: "Articles" },
-    { img: story, title: "Success stories" },
-    { img: insights, title: "Guided Insights" },
+    { img: magazine, title: "Magazines", path: "/magazine" },
+    { img: interview, title: "YouTube Interviews", path: "/youtube" },
+    { img: books, title: "Books", path: "/books" },
+    { img: articles, title: "Articles", path: "/articles" },
+    { img: story, title: "Success stories", path: "/success" },
+    { img: insights, title: "Guided Insights", path: "/insights" },
   ];
+
   return (
     <div className="bg-[black] text-[white] items-center overflow-x-hidden">
       <div className="text-[gray] text-center font-inter-tight  flex flex-col items-center justify-center font-semibold ">

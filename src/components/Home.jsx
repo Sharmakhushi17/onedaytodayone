@@ -29,40 +29,41 @@ const Home = () => {
     { img: story, title: "Success stories" },
     { img: insights, title: "Guided Insights" },
   ];
+  const slides = [magazine, magazine, magazine, magazine, magazine, magazine];
 
   const faq = [
     {
-      label: "What is 1DAYTODAY1",
+      label: "What is 1DAYTODAY1 ?",
       content: [
         "1Day to Day1 is a platform dedicated to showcasing the success journeys of entrepreneurs from various industries. We aim to inspire and empower aspiring entrepreneurs through real-life stories and practical insights.",
       ],
     },
     {
-      label: "How can 1DAYTODAY1 help me",
+      label: "How can 1DAYTODAY1 help me ?",
       content: [
-        "We provide a wealth of resources including magazines, YouTube interviews, books, and articles that delve into the strategies, challenges, and triumphs of successful entrepreneurs. These stories offer motivation and guidance for your entrepreneurial journey",
+        "We provide a wealth of resources including magazines, YouTube interviews, books, and articles that delve into the strategies, challenges, and triumphs of successful entrepreneurs. These stories offer motivation and guidance for your entrepreneurial journey.",
       ],
     },
     {
-      label: "Who is behind 1DAYTODAY1",
+      label: "Who is behind 1DAYTODAY1 ?",
       content: [
         "1Day to Day1 is a venture of DFreeNovelish, founded by Divya Bhardwaj, an entrepreneur passionate about sharing inspiring stories and empowering others to pursue their dreams.",
       ],
     },
     {
-      label: "How often is new content published?",
+      label: "How often is new content published ?",
       content: [
         "We strive to regularly update our platform with fresh content, including new interviews, articles, and insights to keep you informed and inspired.",
       ],
     },
     {
-      label: "Can I contribute to 1DAYTODAY1",
+      label: "Can I contribute to 1DAYTODAY1 ?",
       content: [
         "Yes! We welcome contributions from entrepreneurs and thought leaders who have valuable insights to share. If you have a story or expertise to contribute, please reach out to us through our contact page.",
       ],
     },
     {
-      label: "How can I stay updated with 1DAYTODAY1",
+      label: "How can I stay updated with 1DAYTODAY1 ?",
       content: [
         "Follow us on social media and subscribe to our newsletter to receive the latest updates, interviews, and articles directly to your inbox. Join our community of like-minded individuals and stay connected with our growing network of entrepreneurial enthusiasts.",
       ],
@@ -83,14 +84,17 @@ const Home = () => {
           <span>DIVYA</span>
           <span>BHARDWAJ</span>
         </div>
-        <span className=" flex pl-[50rem] text-[gray] font-instrument text-[1.1rem] font-normal ">
+        <span className=" flex pl-[50rem] text-[gray] font-instrument text-[1.1rem] font-normal cursor-pointer">
           -CEO & Founder of DFREENOVELISH
         </span>
       </div>
       <div className="flex justify-between pb-[1rem] font-instrument text-[1.1rem] font-semibold   bg-[black] text-[white] px-[2rem] pt-[6rem]">
         <span>BASED IN INDIA,UP</span>
         <div className="flex gap-[1rem]">
-          <span>VENTURE OF DFREENOVELISH</span>
+          <span>
+            VENTURE OF{" "}
+            <Link to="https://www.dfreenovelish.com/">DFREENOVELISH</Link>
+          </span>
         </div>
       </div>
       <img className="h-[100%] w-[100%]" src={story}></img>
@@ -143,13 +147,13 @@ const Home = () => {
         </p>
 
         <Link to="/contacts">
-          <button className="bg-[white] text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem]">
+          <button className="bg-[white] hover:bg-sky-300  text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem] ">
             Share your story
           </button>
         </Link>
       </div>
       <div className="py-[5rem]">
-        <Carousel />
+        <Carousel slides={slides} />
       </div>
       <div className="flex flex-wrap pt-[6rem] px-[2rem]">
         <div className="flex flex-col text-[white] text-[3rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  ">
@@ -184,10 +188,10 @@ const Home = () => {
         <p className="text-center"> Global brands</p>
       </div>
       <div className="pt-[5rem]">
-        <Carousel direction="forward" />
+        <Carousel direction="forward" slides={slides} />
       </div>
       <div className="pb-[7rem] pt-[3rem]">
-        <Carousel direction="reverse" />
+        <Carousel direction="reverse" slides={slides} />
       </div>
       <img className="h-[100%] w-[100%] mt-[3rem]" src={insights}></img>
       <div className=" flex flex-col text-[3rem] font-instrument font-semibold leading-[4rem] mt-[10rem]">
@@ -210,10 +214,7 @@ const Home = () => {
       </div>
       <div className="flex pl-[39rem] mt-[-6rem]">
         <Link to="/contacts">
-          <button
-            className="bg-white hover:bg-sky-700  text-[black] rounded-[2rem] font- 
-             semibold w-[10rem] h-[4rem] text-[1.2rem]"
-          >
+          <button className="bg-[white] hover:bg-sky-300  text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem] text-[1.2rem]">
             REGISTER NOW
           </button>
         </Link>
@@ -241,7 +242,7 @@ const Home = () => {
         </p>
         <ul
           className="flex justify-center gap-7 font-semibold text-[1.2rem] 
-         items-center "
+         items-center cursor-pointer"
         >
           <div>
             <li className="flex justify-center   items-center">

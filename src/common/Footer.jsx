@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import icon from "../assets/images/top-right.png";
+import { Link } from "react-router-dom";
 
 const Footer = ({ route }) => {
   return (
@@ -18,14 +19,17 @@ const Footer = ({ route }) => {
       )}
 
       <div className="flex justify-between mx-[3rem] pb-[4.2rem]">
-        <span>© 2024 ALL RIGHTS RESERVED BY DFREENOVELISH</span>
+        <span>
+          © 2024 ALL RIGHTS RESERVED BY{" "}
+          <Link to="https://www.dfreenovelish.com/">DFREENOVELISH</Link>
+        </span>
         {route !== "/navbar" ? (
           <div className="flex gap-[1rem]">
             <span>Privacy Policy</span>
             <span>Terms & Conditions</span>
           </div>
         ) : (
-          <ul className="flex justify-center gap-5  items-center ">
+          <ul className="flex justify-center gap-5  items-center cursor-pointer ">
             <div>
               <li className="flex justify-center   items-center">
                 FACEBOOK
