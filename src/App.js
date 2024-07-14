@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useRoutes,
   useLocation,
 } from "react-router-dom";
 import Home from "./components/Home";
@@ -14,7 +13,7 @@ import Header from "./common/Header";
 import Pricing from "./components/Pricing";
 import Footer from "./common/Footer";
 import Gallery from "./components/Gallery";
-import Contacts from "./components/Contacts";
+import Contacts from "./components/Contacts"; // Ensure this import is correct
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Magazine from "./components/Magazine";
@@ -23,6 +22,8 @@ import Books from "./components/Books";
 import Articles from "./components/Articles";
 import Success from "./components/Success";
 import Insights from "./components/Insights";
+// import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   const [route, setRoute] = useState("");
@@ -41,9 +42,9 @@ export default function App() {
       <RouteChangeTracker />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {/* <Route path="/monthly" element={<MonthlyArticles />} /> */}
         <Route path="/services" element={<Services />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/contacts" element={<Contacts />} />{" "}
+        {/* Ensure this route is correct */}
         <Route exact path="/navbar" element={<Navbar />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/pricing" element={<Pricing />} />
@@ -53,7 +54,6 @@ export default function App() {
         <Route path="/books" element={<Books />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/books" element={<Books />} />
         <Route path="/insights" element={<Insights />} />
       </Routes>
       <Footer route={route} />

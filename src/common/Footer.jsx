@@ -9,7 +9,10 @@ const Footer = ({ route }) => {
         <div
           className=" text-center font-instrument text-[13rem] font-semibold  cursor-pointer mx-[1rem] mb-[-3rem] mt-[2rem]"
           onClick={() => {
-            window.scrollTo(0, 0);
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
           }}
         >
           1DAYTODAY1

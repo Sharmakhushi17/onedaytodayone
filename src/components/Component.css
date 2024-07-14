@@ -131,3 +131,16 @@ input::placeholder {
     transform: translateX(0);
   }
 }
+
+.full-image-style {
+  rotate: none;
+  scale: none;
+  transform: translate3d(0px, 0px, 0px) scale(1.2372, 1.2372);
+}
+.full-image-sec .full-image-style {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.full-image-sec .full-image-style .full-image-box {
+  border-radius: 20rem;
+}

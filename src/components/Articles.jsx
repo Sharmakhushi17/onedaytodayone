@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import articles from "../assets/images/Articles.jpg";
 import Carousel from "./Carousel";
 import CardComponent from "./CardComponent";
@@ -13,6 +13,9 @@ const cards = [
 ];
 
 const Articles = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top on component mount
+  }, []);
   const ArticlesData = [
     {
       title: "Articles",

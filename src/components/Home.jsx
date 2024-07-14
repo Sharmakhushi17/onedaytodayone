@@ -15,19 +15,24 @@ import SlidingCarousel from "./Carousel";
 import { useEffect, useState } from "react";
 import Dropdown from "./Dropdown";
 import Carousel from "./Carousel";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top on component mount
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
   const cards = [
-    { img: magazine, title: "Magazines" },
-    { img: interview, title: "YouTube Interviews" },
-    { img: books, title: "Books" },
-    { img: articles, title: "Articles" },
-    { img: story, title: "Success stories" },
-    { img: insights, title: "Guided Insights" },
+    { img: magazine, title: "Magazines", path: "/magazine" },
+    { img: interview, title: "YouTube Interviews", path: "/youtube" },
+    { img: books, title: "Books", path: "/books" },
+    { img: articles, title: "Articles", path: "/articles" },
+    { img: story, title: "Success stories", path: "/success" },
+    { img: insights, title: "Guided Insights", path: "/insights" },
   ];
   const slides = [magazine, magazine, magazine, magazine, magazine, magazine];
 
@@ -77,7 +82,7 @@ const Home = () => {
         <div className="text-[gray] text-center font-inter-tight  flex flex-col items-center justify-center font-semibold ">
           <span className="mt-[10rem] mb-[1rem]  text-[1.2rem] font-instrument flex flex-wrap items-center ">
             <img className="h-[3.5rem] mr-[-1rem] blink" src={dot}></img>
-            WELCOME TO 1DAY TO DAY1 - WHERE DREAMS TAKE FLIGHT! WTIH YOUR GUIDE
+            WELCOME TO 1DAY TO DAY1 - WHERE DREAMS TAKE FLIGHT! WITH YOUR GUIDE
           </span>
         </div>
         <div className="text-center font-instrument text-[9rem] font-semibold flex flex-col items-center justify-center leading-[8rem] tracking-[-0.4rem] mt-2">
@@ -97,7 +102,11 @@ const Home = () => {
           </span>
         </div>
       </div>
-      <img className="h-[100%] w-[100%]" src={story}></img>
+      <div class="full-image-sec pt-30 full-image-style">
+        <div class="full-image-box">
+          <img decoding="async" class="scaleDown" src={story} alt="" />
+        </div>
+      </div>
       <div className="flex flex-wrap pt-[10rem] px-[2rem]">
         <div className="flex flex-col text-[white] text-[5.9rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  ">
           <p>SPOTLIGHT ON SUCCESS:</p>
@@ -156,7 +165,7 @@ const Home = () => {
         <Carousel slides={slides} />
       </div>
       <div className="flex flex-wrap pt-[6rem] px-[2rem]">
-        <div className="flex flex-col text-[white] text-[3rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  ">
+        <div className="flex flex-col text-[white] text-[6rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  pt-[12rem]">
           <p>MOTIVATION</p>
         </div>
         <div className="flex flex-col text-[white] text-[1.5rem] font-inter-tight font-bold w-[50%] ">

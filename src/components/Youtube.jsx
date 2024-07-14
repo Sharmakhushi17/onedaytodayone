@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import interview from "../assets/images/interview.jpg";
 import Carousel from "./Carousel";
 import CardComponent from "./CardComponent";
 import CardContent from "./CardContent";
 import articles from "../assets/images/Articles.jpg";
 import story from "../assets/images/SuccessStory.jpg";
+import { Link } from "react-router-dom";
 
 const slides = [
   interview,
@@ -19,11 +20,78 @@ const cards = [
   { img: story, title: "Success stories", path: "/success" },
 ];
 const Youtube = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top on component mount
+  }, []);
   const YoutubeData = [
-    { title: "Interviews", content: "https://youtu.be/TjU5h5x3GPc" },
-    { title: "Interviews", content: "https://youtu.be/TjU5h5x3GPc" },
-    { title: "Interviews", content: "https://youtu.be/TjU5h5x3GPc" },
-    { title: "Interviews", content: "https://youtu.be/TjU5h5x3GPc" },
+    {
+      title: "Interviews",
+      content: (
+        <span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </span>
+      ),
+    },
+    {
+      title: "Interviews",
+      content: (
+        <span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </span>
+      ),
+    },
+    {
+      title: "Interviews",
+      content: (
+        <span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </span>
+      ),
+    },
+    {
+      title: "Interviews",
+      content: (
+        <span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </span>
+      ),
+    },
   ];
   return (
     <div className="bg-[black] text-[white]">
