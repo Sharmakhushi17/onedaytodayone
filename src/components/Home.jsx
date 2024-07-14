@@ -78,10 +78,14 @@ const Home = () => {
   const newspaperCarouselImg = [magazine, interview, books, articles, story];
   return (
     <div className="bg-[black] text-[white]">
-      <div className="bg-[black] text-[white] items-center ">
+      <div data-aos="fade-up" className="bg-[black] text-[white] items-center ">
         <div className="text-[gray] text-center font-inter-tight  flex flex-col items-center justify-center font-semibold ">
           <span className="mt-[10rem] mb-[1rem]  text-[1.2rem] font-instrument flex flex-wrap items-center ">
-            <img className="h-[3.5rem] mr-[-1rem] blink" src={dot}></img>
+            <img
+              data-aos="zoom-out"
+              className="h-[3.5rem] mr-[-1rem] blink"
+              src={dot}
+            ></img>
             WELCOME TO 1DAY TO DAY1 - WHERE DREAMS TAKE FLIGHT! WITH YOUR GUIDE
           </span>
         </div>
@@ -89,11 +93,16 @@ const Home = () => {
           <span>DIVYA</span>
           <span>BHARDWAJ</span>
         </div>
-        <span className=" flex pl-[50rem] text-[gray] font-instrument text-[1.1rem] font-normal cursor-pointer">
-          -CEO & Founder of DFREENOVELISH
-        </span>
+        <div className="flex justify-end">
+          <span className="w-[44%] flex text-[gray] font-instrument text-[1.1rem] font-normal">
+            -CEO & Founder of DFREENOVELISH
+          </span>
+        </div>
       </div>
-      <div className="flex justify-between pb-[1rem] font-instrument text-[1.1rem] font-semibold   bg-[black] text-[white] px-[2rem] pt-[6rem]">
+      <div
+        data-aos="fade-up"
+        className="flex justify-between pb-[1rem] font-instrument text-[1.1rem] font-semibold   bg-[black] text-[white] px-[2rem] pt-[6rem]"
+      >
         <span>BASED IN INDIA,UP</span>
         <div className="flex gap-[1rem]">
           <span>
@@ -102,15 +111,22 @@ const Home = () => {
           </span>
         </div>
       </div>
-      <div class="full-image-sec pt-30 full-image-style">
+      <div data-aos="fade-up" class="full-image-sec pt-30 full-image-style">
         <div class="full-image-box">
-          <img decoding="async" class="scaleDown" src={story} alt="" />
+          <img
+            data-aos="zoom-out"
+            decoding="async"
+            class="scaleDown"
+            src={story}
+            alt=""
+            width={"100%"}
+          />
         </div>
       </div>
-      <div className="flex flex-wrap pt-[10rem] px-[2rem]">
+      <div className="flex flex-wrap mt-[10rem] px-[2rem]">
         <div className="flex flex-col text-[white] text-[5.9rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  ">
-          <p>SPOTLIGHT ON SUCCESS:</p>
-          <p>FEATURED WORK</p>
+          <p data-aos="fade-up">SPOTLIGHT ON SUCCESS:</p>
+          <p data-aos="fade-up">FEATURED WORK</p>
         </div>
         <div className="flex flex-col text-[white] text-[1.6rem] font-inter-tight font-normal w-[50%] ">
           <p>
@@ -128,11 +144,16 @@ const Home = () => {
       </div>
       <CardComponent cards={cards} />
       <div className=" bg-[color]  text-[white] text-[8rem] font-instrument font-semibold leading-[7rem] tracking-tight py-[15rem] flex flex-col items-center">
-        <p className="text-center">MORE ABOUT</p>
-        <p className="text-center">1DAYTODAY1</p>
+        <p data-aos="fade-up" className="text-center">
+          MORE ABOUT
+        </p>
+        <p data-aos="fade-up" className="text-center">
+          1DAYTODAY1
+        </p>
         <div className="img-box mt-[15rem]">
           <div class="img-box-inner">
             <img
+              data-aos="zoom-out"
               decoding="async"
               data-jarallax-element="-20 0"
               src={logo}
@@ -141,7 +162,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center font-instrument  font-semi-bold gap-[3rem]">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col items-center font-instrument  font-semi-bold gap-[3rem]"
+      >
         <p className="font-semibold text-[2rem] text-center">
           I'M AN INNOVATIVE DESIGNER AND DIGITAL ARTIST IN TOKYO. <br />
           MY PASSION FOR MINIMALIST AESTHETICS, ELEGANT TYPOGRAPHY, <br />
@@ -161,10 +185,10 @@ const Home = () => {
           </button>
         </Link>
       </div>
-      <div className="py-[5rem]">
+      <div data-aos="fade-up" className="py-[5rem]">
         <Carousel slides={slides} />
       </div>
-      <div className="flex flex-wrap pt-[6rem] px-[2rem]">
+      <div data-aos="fade-up" className="flex flex-wrap pt-[6rem] px-[2rem]">
         <div className="flex flex-col text-[white] text-[6rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  pt-[12rem]">
           <p>MOTIVATION</p>
         </div>
@@ -191,47 +215,77 @@ const Home = () => {
           <p>SIGNATURE</p>
         </div>
       </div>
-      <img className="h-[100%] w-[100%] mt-[3rem]" src={magazine}></img>
+      <img
+        data-aos="zoom-out"
+        className="h-[100%] w-[100%] mt-[3rem]"
+        src={magazine}
+      ></img>
       <div className=" flex flex-col text-[5rem] font-instrument font-semibold leading-[4rem] mt-[7rem]">
-        <p className="text-center">Trusted by</p>
-        <p className="text-center"> Global brands</p>
+        <p data-aos="fade-up" data-aos-duration="1500" className="text-center">
+          Trusted by
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1500" className="text-center">
+          {" "}
+          Global brands
+        </p>
       </div>
-      <div className="pt-[5rem]">
+      <div data-aos="fade-up" className="pt-[5rem]">
         <Carousel direction="forward" slides={slides} />
       </div>
-      <div className="pb-[7rem] pt-[3rem]">
+      <div data-aos="fade-up" className="pb-[7rem] pt-[3rem]">
         <Carousel direction="reverse" slides={slides} />
       </div>
-      <img className="h-[100%] w-[100%] mt-[3rem]" src={insights}></img>
+      <img
+        data-aos="zoom-out"
+        className="h-[100%] w-[100%] mt-[3rem]"
+        src={insights}
+      ></img>
       <div className=" flex flex-col text-[3rem] font-instrument font-semibold leading-[4rem] mt-[10rem]">
-        <p className="text-center">FREQUENTLY</p>
-        <p className="text-center">ASKED QUESTIONS</p>
+        <p data-aos="fade-up" className="text-center">
+          FREQUENTLY
+        </p>
+        <p data-aos="fade-up" className="text-center">
+          ASKED QUESTIONS
+        </p>
       </div>
 
       {/* FAQ DROPDOWN */}
-      <div className="flex-flex-col pl-[5rem] pt-[5rem] gap-[5rem]">
+      <div
+        data-aos="fade-up"
+        className="flex-flex-col pl-[5rem] pt-[5rem] gap-[5rem]"
+      >
         <div>
           {faq.map((item) => (
             <Dropdown label={item.label} content={item.content} />
           ))}
         </div>
       </div>
-      <div className=" bg-[color]  text-[white] text-[8rem] font-instrument font-semibold leading-[7rem] tracking-tighter py-[10rem] flex flex-col items-center">
-        <p className="text-center">Let's Explore</p>
-        <p className="text-center">Entrepreneurial</p>
-        <p className="text-center">Success Together</p>
+      <div
+        data-aos="fade-up"
+        className=" bg-[color]  text-[white] text-[8rem] font-instrument font-semibold leading-[7rem] tracking-tighter py-[10rem] flex flex-col items-center"
+      >
+        <p data-aos="fade-up" className="text-center">
+          Let's Explore
+        </p>
+        <p data-aos="fade-up" className="text-center">
+          Entrepreneurial
+        </p>
+        <p data-aos="fade-up" className="text-center">
+          Success Together
+        </p>
       </div>
-      <div className="flex pl-[39rem] mt-[-6rem]">
+      <div data-aos="fade-up" className="flex w-full justify-center mt-[-6rem]">
         <Link to="/contacts">
           <button className="bg-[white] hover:bg-sky-300  text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem] text-[1.2rem]">
             REGISTER NOW
           </button>
         </Link>
       </div>
-      <div className="flex flex-col items-center py-[5rem]">
+      <div data-aos="fade-up" className="flex flex-col items-center py-[5rem]">
         <div className="img2-box">
           <div class="img2-box-inner">
             <img
+              data-aos="zoom-out"
               decoding="async"
               data-jarallax-element="-20 0"
               src={insights}

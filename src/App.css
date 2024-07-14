@@ -44,6 +44,17 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  background-color: black;
+}
+
+@media screen and (max-width: 767px) {
+  * {
+    font-size: 70%;
+  }
+}
+
 .inputBox::placeholder {
   color: #d6d3d2;
   opacity: 0.3;

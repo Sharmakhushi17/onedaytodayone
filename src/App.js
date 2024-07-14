@@ -22,6 +22,8 @@ import Books from "./components/Books";
 import Articles from "./components/Articles";
 import Success from "./components/Success";
 import Insights from "./components/Insights";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import { ToastContainer } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 
@@ -36,6 +38,9 @@ export default function App() {
 
     return null;
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Router>
       <Header route={route} />

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = ({ route }) => {
   return (
-    <div className="bg-[black] items-center text-[white] font-instrument font-semibold items-center flex-wrap overflow-x-hidden">
+    <div className="bg-[black] text-[white] font-instrument font-semibold items-center flex-wrap overflow-hidden">
       {route !== "/navbar" ? (
         <div
           className=" text-center font-instrument text-[13rem] font-semibold  cursor-pointer mx-[1rem] mb-[-3rem] mt-[2rem]"

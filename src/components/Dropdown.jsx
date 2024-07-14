@@ -9,7 +9,7 @@ const Dropdown = ({ label, content, className = "" }) => {
   };
 
   return (
-    <div className="py-[1rem]">
+    <div className="py-[1rem]" data-aos="fade-up">
       <button
         onClick={toggleDropdown}
         className={` border border-white border-opacity-[0.2]  bg- 

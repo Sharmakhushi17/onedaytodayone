@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
   return (
-    <div className="w-[45%]  rounded-[1rem] border-[Gray]">
+    <div className="w-[45%]  rounded-[1rem] border-[Gray]" data-aos="fade-up">
       <Link to={data.path}>
         <img
           src={data.img}
