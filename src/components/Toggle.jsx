@@ -11,14 +11,14 @@ const ToggleSwitch = ({ isChecked, toggleSwitch }) => {
           <span
             className={`z-20 relative text-[${isChecked ? "white" : "black"}] `}
           >
-            PER PROJECT
+            Inspire Others
           </span>
           <span
             className={`z-10 pl-[0.5rem] relative text-[${
               isChecked ? "black" : "white"
             }]`}
           >
-            SUBSCRPTION
+            Gain Insights
           </span>
         </div>
         <div

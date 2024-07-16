@@ -26,9 +26,9 @@ const Services = () => {
         </span>
       </div>
       <div className="text-center font-instrument text-[7rem] font-semibold flex flex-col items-center justify-center leading-[6rem] tracking-[-0.4rem] mt-2">
-        <span>DRIVING</span>
-        <span>ENTREPRENEURSHIP</span>
-        <span> TRIUMPHS</span>
+        <span data-aos="fade-up">DRIVING</span>
+        <span data-aos="fade-up">ENTREPRENEURSHIP</span>
+        <span data-aos="fade-up"> TRIUMPHS</span>
       </div>
       <CardComponent cards={cards} />
     </div>

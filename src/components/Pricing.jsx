@@ -14,8 +14,8 @@ const Pricing = () => {
         <span className="mt-[10rem] mb-[1rem]  text-[1rem] ">POWER UP</span>
       </div>
       <div className="text-center font-instrument text-[9rem] font-semibold flex flex-col items-center justify-center leading-[8rem] tracking-[-0.4rem] mt-2">
-        <span>MEMBERSHIP</span>
-        <span>PLANS</span>
+        <span data-aos="fade-up">MEMBERSHIP</span>
+        <span data-aos="fade-up">PLANS</span>
       </div>
       <div className="flex items-center justify-center mt-8">
         <ToggleSwitch isChecked={isChecked} toggleSwitch={toggleSwitch} />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import magazine from "../assets/images/magazine.jpg";
+import contactimg from "../assets/images/webph2.jpg";
 import "./Component.css";
 import icon from "../assets/images/top-right.png";
 import { PhoneInput } from "react-international-phone";
@@ -47,12 +47,14 @@ const Contacts = () => {
   };
 
   return (
-    <div>
+    <div className="bg-black">
       <div className="flex flex-wrap bg-[black]">
         <div className="bg-[black] text-[white] w-[50%] p-[2rem] mt-[2rem] font-instrument text-[1.5rem] font-bold">
-          <p className="text-[3rem] font-semibold">SAY HELLO!</p>
+          <p data-aos="fade-up" className="text-[3rem] font-semibold">
+            SAY HELLO!
+          </p>
           <br />
-          <p className="text-[1.5rem] text-[gray] font-bold">
+          <p data-aos="fade-up" className="text-[1.5rem] text-[gray] font-bold">
             Welcome to 1Day to Day1, your destination for inspiring
             entrepreneurial journeys. We're passionate about sharing stories of
             resilience, innovation, and triumph that define success in the
@@ -122,10 +124,17 @@ const Contacts = () => {
           )}
         </div>
         <div className="w-[50%] p-[2rem] mt-[2rem]">
-          <img src={magazine} className="h-[55rem] rounded-xl" alt="Magazine" />
+          <img
+            src={contactimg}
+            className="h-[55rem] rounded-xl"
+            alt="Magazine"
+          />
         </div>
       </div>
-      <div className="flex flex-wrap bg-[black] text-[white] px-[4rem] pl-[7rem] pt-[5rem] font-instrument">
+      <div
+        data-aos="fade-up"
+        className="flex flex-wrap bg-[black] text-[white] px-[4rem] pl-[7rem] pt-[5rem] font-instrument"
+      >
         <div className="flex flex-col gap-[1rem] text-[1.2rem] w-[25%] font-semibold leading-[1rem]">
           <h4 className="text-[gray] pb-[1rem] text-[1rem]">SOCIAL</h4>
           <span>FACEBOOK</span>
