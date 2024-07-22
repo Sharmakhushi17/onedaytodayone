@@ -34,7 +34,7 @@ const Dropdown = ({ label, content, className = "" }) => {
               <li key={index}>
                 <a
                   href="#"
-                  className="block px-4 py-2  dark:hover:text-white bg-[transparent]"
+                  className="block text-[1.2rem] px-4 py-2  dark:hover:text-white bg-[transparent]"
                 >
                   {item}
                 </a>

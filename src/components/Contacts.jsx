@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import contactimg from "../assets/images/webph2.jpg";
 import "./Component.css";
-import icon from "../assets/images/top-right.png";
+// import icon from "../assets/images/top-right.png";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import axios from "axios";
 
 const Contacts = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,8 +51,8 @@ const Contacts = () => {
 
   return (
     <div className="bg-black">
-      <div className="flex flex-wrap bg-[black]">
-        <div className="bg-[black] text-[white] w-[50%] p-[2rem] mt-[2rem] font-instrument text-[1.5rem] font-bold">
+      <div className="flex flex-wrap justify-center bg-[black]">
+        <div className="bg-[black] text-[white] w-[49rem] px-[1rem] mt-[2rem] font-instrument text-[1.5rem] font-bold footer-content">
           <p data-aos="fade-up" className="text-[3rem] font-semibold">
             SAY HELLO!
           </p>
@@ -123,7 +126,7 @@ const Contacts = () => {
             </div>
           )}
         </div>
-        <div className="w-[50%] p-[2rem] mt-[2rem]">
+        <div className="w-[49rem] px-[1rem] mt-[2rem] footer-content">
           <img
             src={contactimg}
             className="h-[55rem] rounded-xl"
@@ -133,10 +136,12 @@ const Contacts = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="flex flex-wrap bg-[black] text-[white] px-[4rem] pl-[7rem] pt-[5rem] font-instrument"
+        className="flex flex-wrap justify-between bg-[black] text-[white] px-[3rem]  pt-[5rem] font-instrument contact-details"
       >
-        <div className="flex flex-col gap-[1rem] text-[1.2rem] w-[25%] font-semibold leading-[1rem]">
-          <h4 className="text-[gray] pb-[1rem] text-[1rem]">SOCIAL</h4>
+        <div className="flex flex-col  justify-between text-[1.2rem] pb-[1rem] font-semibold mt-[1rem] content">
+          <h4 className="text-[gray] pb-[0.5rem] text-[1rem] content">
+            SOCIAL
+          </h4>
           <span>FACEBOOK</span>
           <span>INSTAGRAM</span>
           <span>TWITTER</span>
@@ -144,20 +149,20 @@ const Contacts = () => {
           <span>PINTEREST</span>
           <span>YOUTUBE</span>
         </div>
-        <div className="flex flex-col gap-[1rem] text-[1.2rem] w-[25%] font-semibold leading-[1rem]">
-          <h1 className="text-[gray] pb-[1rem] text-[1rem]">
+        <div className="flex flex-col gap-[1rem] text-[1.2rem] pb-[1rem] font-semibold leading-[0.5rem] mt-[1rem] content">
+          <h1 className="text-[gray] pb-[0.5rem] text-[1rem] content">
             CURRENT LOCATION
           </h1>
           <span>UTTAR PRADESH,</span>
           <span>INDIA</span>
         </div>
-        <div className="flex flex-col gap-[1rem] text-[1.2rem] w-[25%] font-semibold leading-[1rem]">
-          <h1 className="text-[gray] pb-[1rem] text-[1rem]">PHONE</h1>
+        <div className="flex flex-col gap-[1rem] text-[1.2rem] pb-[1rem] font-semibold leading-[0.5rem] mt-[1rem] content">
+          <h1 className="text-[gray] pb-[0.5rem] text-[1rem] content">PHONE</h1>
           <span>+91-7302344754</span>
           <span>+91-7618162404</span>
         </div>
-        <div className="flex flex-col gap-[1rem] text-[1.2rem] w-[25%] font-semibold leading-[1rem]">
-          <h1 className="text-[gray] pb-[1rem] text-[1rem]">EMAIL</h1>
+        <div className="flex flex-col gap-[1rem] text-[1.2rem] pb-[1rem] font-semibold leading-[0.5rem] mt-[1rem] content">
+          <h1 className="text-[gray] pb-[0.5rem] text-[1rem] content">EMAIL</h1>
           <a href="mailto:info@1daytoday1.com" style={{ color: "white" }}>
             info@1daytoday1.com
           </a>

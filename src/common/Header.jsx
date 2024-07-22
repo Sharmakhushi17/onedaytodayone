@@ -30,7 +30,7 @@ const Header = ({ route }) => {
   }, []);
   return (
     <div
-      className={`flex justify-between p-[2rem] text-[white] bg-[black] items-center h-[15vh] flex-wrap border-[gray] font-instrument text-xl f font-semibold  ${
+      className={`flex justify-between p-[2rem] text-[white] bg-[black] items-center flex-wrap border-[gray] font-instrument text-xl f font-semibold  ${
         route === "/navbar" ? "pt-[4rem]" : "border-b-[0.1px]"
       }`}
     >
@@ -40,15 +40,20 @@ const Header = ({ route }) => {
             className=" mail-icon hover:opacity-[0.5] cursor-pointer"
             to="/"
           >
-            LOCAL
+            <span className="text-[1rem]">LOCAL</span>
           </Link>
         </span>{" "}
-        / {route === "/navbar" ? `24° 30' 0.0000" N` : localTime}
+        <span className="text-[1rem]">/</span>{" "}
+        {route === "/navbar" ? (
+          `24° 30' 0.0000" N`
+        ) : (
+          <span className="text-[1rem]">{localTime}</span>
+        )}
       </p>
       <div className="flex flex-col items-center justify-center">
         {route !== "/navbar" ? (
           <>
-            <span className="text-[grey]">Register Here</span>
+            <span className="text-[grey] text-[1rem]">Register Here</span>
             <Link to="/contacts">
               <img
                 src={email}
@@ -68,7 +73,7 @@ const Header = ({ route }) => {
         )}
       </div>
       <Link
-        className="navigate rounded-[2rem] border-[2px] border-white p-[0.7rem]"
+        className="navigate rounded-[2rem] border-[2px] border-white p-[0.7rem] buton"
         to="/navbar"
       >
         {route === "/navbar" ? (

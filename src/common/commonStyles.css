@@ -17,6 +17,15 @@
   color: black;
 }
 
+.navigatee {
+  transition: background-color 2s ease;
+  transition: color 0.7s ease;
+}
+.navigatee:hover {
+  background-color: black;
+  color: white;
+}
+
 .navbar-menu span {
   height: 6.5rem;
 }
@@ -41,3 +50,9 @@
 .card-image:hover {
   transform: scale(0.9);
 }
+/* @media screen and (max-width: 1025px) {
+  .footer {
+    justify-items: center !important;
+    padding-top: 2rem;
+  }
+} */

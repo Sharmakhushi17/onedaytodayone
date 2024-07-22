@@ -29,7 +29,7 @@ const Youtube = () => {
       content: (
         <span>
           <iframe
-            width="560"
+            width="100%"
             height="315"
             src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
             title="YouTube video player"
@@ -43,62 +43,69 @@ const Youtube = () => {
     },
     {
       title: "Interviews",
-      content: (
-        <span>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </span>
-      ),
+      content:
+        //  (
+        //   <span>
+        //     <iframe
+        //       width="100%"
+        //       height="315"
+        //       src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
+        //       title="YouTube video player"
+        //       frameborder="0"
+        //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        //       referrerpolicy="strict-origin-when-cross-origin"
+        //       allowfullscreen
+        //     ></iframe>
+        //   </span>
+        // )
+        "Videos",
     },
     {
       title: "Interviews",
-      content: (
-        <span>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </span>
-      ),
+      content: "videos",
+      // (
+      //   <span>
+      //     <iframe
+      //       width="100%"
+      //       height="315"
+      //       src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
+      //       title="YouTube video player"
+      //       frameborder="0"
+      //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      //       referrerpolicy="strict-origin-when-cross-origin"
+      //       allowfullscreen
+      //     ></iframe>
+      //   </span>
+      // ),
     },
     {
       title: "Interviews",
-      content: (
-        <span>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </span>
-      ),
+      content: "videos",
+      // (
+      //   <span>
+      //     <iframe
+      //       width="100%"
+      //       height="315"
+      //       src="https://www.youtube.com/embed/TjU5h5x3GPc?si=r-GBhORfDm2PdE2n"
+      //       title="YouTube video player"
+      //       frameborder="0"
+      //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      //       referrerpolicy="strict-origin-when-cross-origin"
+      //       allowfullscreen
+      //     ></iframe>
+      //   </span>
+      // )
     },
   ];
   return (
     <div className="bg-[black] text-[white]">
       <div className="flex items-center text-center py-[5rem] px-[3rem]">
         <div className="flex flex-col text-[white] text-[1.5rem] font-inter-tight  leading-[rem] tracking-tight ">
-          <p className="text-[4rem] font-semibold">YOUTUBE INTERVIEWS</p>
-          <p className="text-[gray] px-[8rem]">
+          <p className="text-[4rem] font-semibold title leading-3 mb-4">
+            YOUTUBE{" "}
+          </p>
+          <p className="text-[4rem] font-semibold title ">INTERVIEWS</p>
+          <p className="text-[gray] px-[8rem] service-content-title">
             Step inside a Lightric Motors vehicle and experience the perfect
             fusion of luxury and efficiency. Our interiors are meticulously
             crafted with premium materials and cutting-edge technology to create

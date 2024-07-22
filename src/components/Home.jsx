@@ -85,58 +85,117 @@ const Home = () => {
   const newspaperCarouselImg = [magazine, interview, books, articles, story];
   return (
     <div className="bg-[black] text-[white]">
-      <div data-aos="fade-up" className="bg-[black] text-[white] items-center ">
-        <div className="text-[gray] text-center font-inter-tight  flex flex-col gap-[0.5rem] items-center justify-center font-semibold ">
-          <span className="mt-[10rem] mb-[1rem]  text-[1.2rem] font-instrument flex flex-wrap items-center ">
+      {/* <div className="flex flex-col justify-between  h-[75vh] title">
+        <div
+          data-aos="fade-up"
+          className="bg-[black] text-[white] flex flex-col items-center justify-center "
+        >
+          <div className="text-[gray] text-center font-inter-tight  flex flex-col  items-center justify-center font-semibold ">
+            <div className="mt-[7rem] mb-[1rem]  text-[1.2rem] font-instrument flex flex-wrap items-center ">
+              <img
+                data-aos="zoom-out"
+                className="h-[3.5rem] mr-[-1rem] blink"
+                src={dot}
+              ></img>
+              <span className="welcome">
+                WELCOME TO 1DAY TO DAY1 - WHERE DREAMS TAKE FLIGHT! WITH YOUR
+                GUIDE
+              </span>
+            </div>
+          </div>
+          <div className="text-center font-instrument mainHeading font-semibold flex flex-col items-center justify-center leading-[8rem] tracking-[-0.4rem] mt-2 name">
+            <span>DIVYA</span>
+            <span>BHARDWAJ</span>
+          </div>
+          <div className="flex justify-end w-full">
+            <span className="w-[44%] flex text-[gray] font-instrument text-[1.1rem] font-normal">
+              -CEO & Founder of DFREENOVELISH
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          className="flex justify-between pb-[1rem] font-instrument text-[1.1rem] font-semibold   bg-[black] text-[white] px-[2rem] pt-[4rem]"
+        >
+          <span className="text-[1.1rem]">BASED IN INDIA,UP</span>
+          <div className="flex gap-[1rem]">
+            <span className="text-[1.1rem]">
+              VENTURE OF{" "}
+              <Link
+                className="text-[1.1rem]"
+                to="https://www.dfreenovelish.com/"
+              >
+                DFREENOVELISH
+              </Link>
+            </span>
+          </div>
+        </div>
+      </div> */}
+      <div className="flex flex-col justify-between p-[2.2rem] h-[74vh]">
+        <div className="w-full flex flex-col justify-center h-[95%] items-center">
+          <div className="flex items-center">
             <img
               data-aos="zoom-out"
-              className="h-[3.5rem] mr-[-1rem] blink "
+              className="h-[3.5rem] mr-[-1rem] blink"
               src={dot}
             ></img>
-            WELCOME TO 1DAY TO DAY1 - WHERE DREAMS TAKE FLIGHT! WITH YOUR GUIDE
+            <span className="welcome text-[gray] font-inter-tight font-semibold">
+              WELCOME TO 1DAY TO DAY1 - WHERE DREAMS TAKE FLIGHT! WITH YOUR
+              GUIDE
+            </span>
+          </div>
+          <div className="w-[70%] flex items-center justify-center flex-col">
+            <div className="flex flex-col items-center">
+              <span className="leading-[8rem] font-instrument mainHeading tracking-[-0.4rem] name font-semibold">
+                DIVYA
+              </span>
+              <span className="leading-[8rem] font-instrument mainHeading tracking-[-0.4rem] name font-semibold">
+                BHARDWAJ
+              </span>
+              <div className="w-full flex justify-end text-[gray] font-instrument text-[1.1rem] font-normal">
+                -CEO & Founder of{" "}
+                <Link
+                  className="text-[1.1rem]"
+                  to="https://www.dfreenovelish.com/"
+                >
+                  DFREENOVELISH
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <span className="text-[1.1rem] font-instrument font-semibold text-white">
+            BASED IN INDIA,UP
           </span>
-        </div>
-        <div className="text-center font-instrument text-[9rem] font-semibold flex flex-col items-center justify-center leading-[8rem] tracking-[-0.4rem] mt-2">
-          <span>DIVYA</span>
-          <span>BHARDWAJ</span>
-        </div>
-        <div className="flex justify-end">
-          <span className="w-[44%] flex text-[gray] font-instrument text-[1.1rem] font-normal">
-            -CEO & Founder of DFREENOVELISH
-          </span>
-        </div>
-      </div>
-      <div
-        data-aos="fade-up"
-        className="flex justify-between pb-[1rem] font-instrument text-[1.1rem] font-semibold   bg-[black] text-[white] px-[2rem] pt-[6rem]"
-      >
-        <span>BASED IN INDIA,UP</span>
-        <div className="flex gap-[1rem]">
-          <span>
+          <span className="text-[1.1rem] font-instrument font-semibold text-white">
             VENTURE OF{" "}
-            <Link to="https://www.dfreenovelish.com/">DFREENOVELISH</Link>
+            <a
+              href="https://www.dfreenovelish.com/"
+              className="text-[1.1rem] font-instrument font-semibold text-white"
+            >
+              DFREENOVELISH
+            </a>
           </span>
         </div>
       </div>
       <div data-aos="fade-up" class="full-image-sec pt-30 full-image-style">
-        <div class="full-image-box">
-          <img
-            data-aos="zoom-out"
-            decoding="async"
-            className="px-[2rem] rounded-[5rem]"
-            src={photo}
-            alt=""
-            width={"100%"}
-            height={"60%"}
-          />
-        </div>
+        <img
+          decoding="async"
+          className="px-[2rem] rounded-[5rem]"
+          src={photo}
+          alt=""
+          width={"100%"}
+          height={"60%"}
+        />
       </div>
-      <div className="flex flex-wrap pt-[10rem] px-[2rem]">
-        <div className="flex flex-col text-[white] text-[5.9rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  ">
+      <div className="flex flex-wrap pt-[10rem] px-[2rem]   justify-center">
+        <div className="flex flex-col text-[white] subHeading font-inter-tight font-semibold w-[45rem] leading-[6rem] tracking-tight  ">
           <p data-aos="fade-up">SPOTLIGHT ON SUCCESS:</p>
-          <p data-aos="fade-up">FEATURED WORK</p>
+          <p data-aos="fade-up">FEATURED </p>
+          <p data-aos="fade-up">WORK </p>
         </div>
-        <div className="flex flex-col text-[white] text-[1.6rem] font-inter-tight font-normal w-[50%] ">
+        <div className="flex flex-col text-[white] text-[1.6rem] font-inter-tight font-normal w-[45rem]  justify-center">
           <p>
             {" "}
             Welcome to 1Day to Day1, your hub for entrepreneurial inspiration.
@@ -151,14 +210,14 @@ const Home = () => {
         </div>
       </div>
       <CardComponent cards={cards} />
-      <div className=" bg-[color]  text-[white] text-[8rem] font-instrument font-semibold leading-[7rem] tracking-tight pt-[15rem] flex flex-col items-center pb-[5rem]">
+      <div className=" bg-[color]  text-[white] heading font-instrument font-semibold leading-[7rem] tracking-tight pt-[15rem] flex flex-col items-center pb-[5rem] ">
         <p data-aos="fade-up" className="text-center">
           MORE ABOUT
         </p>
         <p data-aos="fade-up" className="text-center">
           1DAYTODAY1
         </p>
-        <div className="img-box mt-[5rem]">
+        <div className="img-box mob-logo mt-[5rem]">
           <div class="img-box-inner">
             <img
               data-aos="zoom-out"
@@ -181,18 +240,20 @@ const Home = () => {
           entrepreneurial narratives, Divya's leadership fuels our mission to
           inspire and equip aspiring entrepreneurs worldwide.
         </p>
-        <p className="font-normal text-[1.5rem] px-[12rem] text-center">
-          Our platform is dedicated to showcasing the inspiring startup journeys
-          of our clients. Each story is a testament to resilience, creativity,
-          and the relentless pursuit of dreams. We highlight the unique
-          experiences, breakthroughs, and lessons learned by entrepreneurs as
-          they transform their visions into reality. By sharing these
-          narratives, we aim to inspire and motivate others to embark on their
-          entrepreneurial endeavors.
-        </p>
+        <div className="w-full flex justify-center">
+          <p className="w-[77%] text-center font-normal text-[1.5rem] px-[1.5rem]">
+            Our platform is dedicated to showcasing the inspiring startup
+            journeys of our clients. Each story is a testament to resilience,
+            creativity, and the relentless pursuit of dreams. We highlight the
+            unique experiences, breakthroughs, and lessons learned by
+            entrepreneurs as they transform their visions into reality. By
+            sharing these narratives, we aim to inspire and motivate others to
+            embark on their entrepreneurial endeavors.
+          </p>
+        </div>
 
         <Link to="/contacts">
-          <button className="bg-[white] hover:bg-sky-300  text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem] ">
+          <button className="bg-[white]  border-[2px] border-white  text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem] text-[1.1rem] button navigatee">
             Share your story
           </button>
         </Link>
@@ -200,11 +261,11 @@ const Home = () => {
       <div data-aos="fade-up" className="py-[5rem]">
         <Carousel slides={slides1} />
       </div>
-      <div data-aos="fade-up" className="flex flex-wrap pt-[6rem] px-[2rem]">
-        <div className="flex flex-col text-[white] text-[6rem] font-inter-tight font-semibold w-[50%] leading-[6rem] tracking-tight  justify-center">
+      <div data-aos="fade-up" className="flex flex-wrap  pt-[6rem] px-[2rem]">
+        <div className="flex flex-col text-[white] subHeading font-inter-tight font-semibold w-[42rem] leading-[6rem] tracking-tight  justify-center">
           <p>MOTIVATION</p>
         </div>
-        <div className="flex flex-col text-[white] text-[1.5rem] font-inter-tight font-bold w-[50%] ">
+        <div className="flex flex-col text-[white] text-[1.5rem] font-inter-tight font-bold w-[50rem] justify-center">
           <p>
             Located at the heart of entrepreneurial empowerment, Divya Bhardwaj
             is the visionary founder of DFreeNovelish and the driving force
@@ -222,11 +283,10 @@ const Home = () => {
             aspirations into reality.
           </p>
           <br />
-          <p>SIGNATURE</p>
+          <p className="flex justify-center">SIGNATURE</p>
         </div>
       </div>
       <img
-        data-aos="zoom-out"
         className="h-[30%] w-[100%] mt-[3rem] px-[2rem] rounded-[5rem]"
         src={mic2}
       ></img>
@@ -246,7 +306,6 @@ const Home = () => {
         <Carousel direction="reverse" slides={slides2} />
       </div>
       <img
-        data-aos="zoom-out"
         className="h-[100%] w-[100%] mt-[3rem] px-[2rem] rounded-[5rem]"
         src={magazine3}
       ></img>
@@ -272,7 +331,7 @@ const Home = () => {
       </div>
       <div
         data-aos="fade-up"
-        className=" bg-[color]  text-[white] text-[8rem] font-instrument font-semibold leading-[7rem] tracking-tighter py-[10rem] flex flex-col items-center"
+        className=" bg-[color]  text-[white] heading font-instrument font-semibold leading-[7rem] tracking-tighter py-[10rem] flex flex-col items-center"
       >
         <p data-aos="fade-up" className="text-center">
           Let's Explore
@@ -286,7 +345,7 @@ const Home = () => {
       </div>
       <div data-aos="fade-up" className="flex w-full justify-center mt-[-6rem]">
         <Link to="/contacts">
-          <button className="bg-[white] hover:bg-sky-300  text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem] text-[1.2rem]">
+          <button className="bg-[white] border-[2px] border-white  text-[black] rounded-[2rem] font-semibold w-[10rem] h-[4rem] text-[1.2rem] buton navigatee">
             REGISTER NOW
           </button>
         </Link>
@@ -316,38 +375,34 @@ const Home = () => {
             endless possibilities.
           </p>
         </div>
-        <ul
-          className="flex justify-center gap-7 font-semibold text-[1.2rem] 
-         items-center cursor-pointer"
-        >
-          <div>
+        <div className="flex justify-between text-[1.6rem] pb-3 px-2">
+          <ul className="flex  flex-wrap justify-center gap-5  items-center cursor-pointer ">
             <li className="flex justify-center   items-center">
               FACEBOOK
-              <img src={icon}></img>
+              <img className="h-[1.5rem]" src={icon}></img>
             </li>
-            <div className="underlines"></div>
-          </div>
-          <li className="flex justify-center   items-center">
-            INSTAGRAM
-            <img src={icon}></img>
-          </li>
-          <li className="flex justify-center   items-center">
-            TWITTER
-            <img src={icon}></img>
-          </li>
-          <li className="flex justify-center   items-center">
-            LINKEDIN
-            <img src={icon}></img>
-          </li>
-          <li className="flex justify-center   items-center">
-            PINTEREST
-            <img src={icon}></img>
-          </li>
-          <li className="flex justify-center   items-center">
-            YOUTUBE
-            <img src={icon}></img>
-          </li>
-        </ul>
+            <li className="flex justify-center   items-center">
+              INSTAGRAM
+              <img className="h-[1.5rem]" src={icon}></img>
+            </li>
+            <li className="flex justify-center   items-center">
+              TWITTER
+              <img className="h-[1.5rem]" src={icon}></img>
+            </li>
+            <li className="flex justify-center   items-center">
+              LINKEDIN
+              <img className="h-[1.5rem]" src={icon}></img>
+            </li>
+            <li className="flex justify-center   items-center">
+              PINTEREST
+              <img className="h-[1.5rem]" src={icon}></img>
+            </li>
+            <li className="flex justify-center   items-center">
+              YOUTUBE
+              <img className="h-[1.5rem]" src={icon}></img>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

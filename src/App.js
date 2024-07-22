@@ -24,6 +24,8 @@ import Success from "./components/Success";
 import Insights from "./components/Insights";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsConditions from "./components/TermsConditions";
 // import { ToastContainer } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 
@@ -60,6 +62,8 @@ export default function App() {
         <Route path="/articles" element={<Articles />} />
         <Route path="/success" element={<Success />} />
         <Route path="/insights" element={<Insights />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/Terms" element={<TermsConditions />} />
       </Routes>
       <Footer route={route} />
     </Router>

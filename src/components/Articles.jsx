@@ -42,8 +42,8 @@ const Articles = () => {
     <div className="bg-[black] text-[white]">
       <div className="flex items-center text-center py-[5rem] px-[3rem]">
         <div className="flex flex-col text-[white] text-[1.5rem] font-inter-tight  leading-[rem] tracking-tight ">
-          <p className="text-[4rem] font-semibold">ARTICLES</p>
-          <p className="text-[gray] px-[8rem]">
+          <p className="text-[4rem] font-semibold title">ARTICLES</p>
+          <p className="text-[gray] px-[8rem] service-content-title">
             Step inside a Lightric Motors vehicle and experience the perfect
             fusion of luxury and efficiency. Our interiors are meticulously
             crafted with premium materials and cutting-edge technology to create

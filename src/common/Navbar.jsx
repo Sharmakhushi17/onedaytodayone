@@ -12,12 +12,12 @@ const Navbar = () => {
     { name: "CONTACT", path: "/contacts" },
   ];
   return (
-    <div className="h-[74vh] w-[100%] bg-[black] flex items-center justify-center text-[white]">
-      <div className=" items-center justify-center flex flex-col font-instrument text-[8rem] font-semibold  mb-[1rem] navbar-menu">
+    <div className="min-h-[74vh] w-[100%] bg-[black] flex items-center justify-center text-[white] navpage">
+      <div className=" items-center justify-center flex flex-col font-instrument heading font-semibold  mb-[1rem] navbar-menu nav-item">
         {navbarItems.map((element) => (
           <Link
             to={element.path}
-            className="leading-[7rem] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-100 hover:text-[black]  duration-300 ..."
+            className="leading-[6.5rem] cursor-pointer nav-item transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-100 hover:text-[black]  duration-300 ..."
           >
             {element.name}
           </Link>

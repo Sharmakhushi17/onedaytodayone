@@ -8,7 +8,7 @@ const Gallery = () => {
           (2024-Present)
         </span>
       </div>
-      <div className="text-center font-instrument text-[9rem] font-semibold flex flex-col items-center justify-center leading-[8rem] tracking-[-0.4rem] mt-2">
+      <div className="text-center font-instrument mainHeading font-semibold flex flex-col items-center justify-center leading-[8rem] tracking-[-0.4rem] mt-2 title">
         <span data-aos="fade-up">GALLERY</span>
         <span data-aos="fade-up">ENDEAVORS</span>
       </div>

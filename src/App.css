@@ -36,6 +36,24 @@
   color: #61dafb;
 }
 
+.mainHeading {
+  font-size: 9rem;
+}
+
+.heading {
+  font-size: 8rem;
+}
+
+.subHeading {
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 700px) {
+  .mainHeading {
+    font-size: 6rem;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -45,13 +63,27 @@
   }
 }
 
-* {
-  /* background-color: black; */
+@media screen and (max-width: 1600px) {
+  * {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  * {
+    font-size: 78%;
+  }
 }
 
 @media screen and (max-width: 767px) {
   * {
     font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 65%;
   }
 }
 
