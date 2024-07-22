@@ -139,7 +139,7 @@ const Home = () => {
               className="h-[3.5rem] mr-[-1rem] blink"
               src={dot}
             ></img>
-            <span className="welcome text-[gray] font-inter-tight font-semibold">
+            <span className="text-[1.1rem] welcome text-[gray] font-inter-tight font-semibold">
               WELCOME TO 1DAY TO DAY1 - WHERE DREAMS TAKE FLIGHT! WITH YOUR
               GUIDE
             </span>

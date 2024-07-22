@@ -339,6 +339,16 @@ input::placeholder {
     padding-right: 1.5rem;
   }
 }
+@media screen and (max-width: 700px) {
+  .welcome {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .welcome {
+    font-size: 0.7rem;
+  }
+}
 /* @media screen and (max-width: 1500px) {
   .title {
     height: 45vh;
