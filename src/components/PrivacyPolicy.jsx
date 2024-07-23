@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
         </p>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">1. Introduction</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             Welcome to <strong>1 Day to Day 1</strong>. We are dedicated to
             protecting your personal information and your right to privacy. This
             Privacy Policy explains what information we collect, how we use it,
@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">5. Data Security</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             We implement a variety of security measures to protect your personal
             information. These measures include encryption, access controls, and
             secure data storage.
@@ -97,14 +97,14 @@ const PrivacyPolicy = () => {
           <h2 className="text-3xl font-bold mb-4">
             7. Changes to This Privacy Policy
           </h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             We may update our Privacy Policy from time to time. We will notify
             you of any changes by posting the new Privacy Policy on our website.
           </p>
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-semibold mb-4 ">8. Contact Us</h2>
-          <p className="text-[1.2rem]">
+          <p className="text-[1.5rem]">
             If you have any questions about this Privacy Policy, please contact
             us at:
           </p>

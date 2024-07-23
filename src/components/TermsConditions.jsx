@@ -15,7 +15,7 @@ const TermsConditions = () => {
         </p>
         <section data-aos="fade-up" className="mb-8 ">
           <h2 className="text-3xl font-bold mb-4">1. Acceptance of Terms</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             By accessing and using the services provided by One Day to Day One,
             you agree to comply with and be bound by these Terms & Conditions.
             If you do not agree with these terms, please do not use our
@@ -24,17 +24,17 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">2. Services Provided</h2>
+          <p className="text-[1.6rem] pb-1">
+            One Day to Day One provides a variety of services, including but not
+            limited to:
+          </p>
           <ul className="list-disc ml-5 space-y-2 text-[1.6rem]">
-            <li>
-              One Day to Day One provides a variety of services, including but
-              not limited to:
-              <ul className="list-disc ml-5 space-y-2 text-[1.6rem] ">
-                <li>Conducting interviews and creating success stories.</li>
-                <li>
-                  Publishing magazines and books based on these success stories.
-                </li>
-              </ul>
-            </li>
+            <ul className="list-disc ml-5 space-y-2 text-[1.6rem] ">
+              <li>Conducting interviews and creating success stories.</li>
+              <li>
+                Publishing magazines and books based on these success stories.
+              </li>
+            </ul>
           </ul>
         </section>
         <section data-aos="fade-up" className="mb-8">
@@ -50,7 +50,7 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4 ">4. Content Submission</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             By submitting content (such as stories, articles, or interviews) to
             One Day to Day One, you agree to:
           </p>
@@ -67,7 +67,7 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">5. Intellectual Property</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             All content and materials on our website, including text, graphics,
             logos, and images, are the property of One Day to Day One and are
             protected by intellectual property laws. Unauthorized use of any
@@ -76,7 +76,7 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">6. Privacy Policy</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             Your use of our services is also governed by our Privacy Policy,
             which can be found{" "}
             <a
@@ -92,7 +92,7 @@ const TermsConditions = () => {
           <h2 className="text-3xl font-bold mb-4">
             7. Disclaimers and Limitation of Liability
           </h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             Our services are provided "as is" without warranties of any kind.
             One Day to Day One does not guarantee the accuracy or completeness
             of any content provided. To the fullest extent permitted by law, One
@@ -102,7 +102,7 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">8. Indemnification</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             You agree to indemnify and hold One Day to Day One, its affiliates,
             and employees harmless from any claims, damages, or expenses arising
             from your use of our services or your violation of these Terms &
@@ -111,7 +111,7 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">9. Termination</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             One Day to Day One reserves the right to terminate your access to
             our services at any time, without notice, for conduct that we
             believe violates these Terms & Conditions or is harmful to other
@@ -120,7 +120,7 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">10. Governing Law</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             These Terms & Conditions are governed by and construed in accordance
             with the laws of Amroha, without regard to its conflict of law
             principles.
@@ -130,7 +130,7 @@ const TermsConditions = () => {
           <h2 className="text-3xl font-bold mb-4">
             11. Changes to Terms & Conditions
           </h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             We may update these Terms & Conditions from time to time. We will
             notify you of any changes by posting the new Terms & Conditions on
             our website. Your continued use of our services after any changes
@@ -139,11 +139,11 @@ const TermsConditions = () => {
         </section>
         <section data-aos="fade-up" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">12. Contact Us</h2>
-          <p className="mb-4 text-[1.2rem]">
+          <p className="mb-4 text-[1.5rem]">
             If you have any questions about these Terms & Conditions, please
             contact us at:
           </p>
-          <address className="not-italic mt-4 text-[1.2rem]">
+          <address className="not-italic mt-4 text-[1.5rem]">
             <p className="mb-2 font-semibold ">
               1 Day to Day 1, Venture of{" "}
               <a
