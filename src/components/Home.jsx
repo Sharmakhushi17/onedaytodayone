@@ -23,6 +23,7 @@ import magazine3 from "../assets/images/webph5.jpg";
 import photo from "../assets/images/1daytoday1 photo-modified.jpg";
 import mic2 from "../assets/images/webph1.jpg";
 import photo2 from "../assets/images/Photoo.jpg";
+import signature from "../assets/images/sign.png";
 
 const Home = () => {
   useEffect(() => {
@@ -262,10 +263,10 @@ const Home = () => {
         <Carousel slides={slides1} />
       </div>
       <div data-aos="fade-up" className="flex flex-wrap  pt-[6rem] px-[2rem]">
-        <div className="flex flex-col text-[white] subHeading font-inter-tight font-semibold w-[42rem] leading-[6rem] tracking-tight  justify-center">
+        <div className="flex flex-col text-[white] subHeading font-inter-tight font-semibold w-[42rem] leading-[6rem] tracking-tight  ">
           <p>MOTIVATION</p>
         </div>
-        <div className="flex flex-col text-[white] text-[1.5rem] font-inter-tight font-bold w-[50rem] justify-center">
+        <div className="flex flex-col text-[white] text-[1.5rem] font-inter-tight font-bold w-[50rem] items-center">
           <p>
             Located at the heart of entrepreneurial empowerment, Divya Bhardwaj
             is the visionary founder of DFreeNovelish and the driving force
@@ -282,8 +283,12 @@ const Home = () => {
             stories behind entrepreneurial achievement, helping you turn
             aspirations into reality.
           </p>
-          <br />
-          <p className="flex justify-center">SIGNATURE</p>
+
+          <img
+            className=" w-[20rem] h-[15rem]  "
+            src={signature}
+            alt="signature"
+          ></img>
         </div>
       </div>
       <img
